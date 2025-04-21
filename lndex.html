@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>노래 점수</title>
+    <title>랜덤 문구</title>
     <style>
         body {
             text-align: center;
@@ -13,20 +13,21 @@
     </style>
 </head>
 <body>
-    <p id="message">당신의 노래 점수는...</p>
+    <p id="message">당신의 노래점수는?</p>
     <button onclick="showRandomMessage()">눌러서 확인하기</button>
 
     <script>
         function showRandomMessage() {
             const messages = [
-                "100",
-                "90",
-                "80",
-                "70",
-                "60"
+                "100점",
+                "90점",
+                "80점",
+                "70점",
+                "60점"
             ];
             document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
         }
     </script>
 </body>
 </html>
+
